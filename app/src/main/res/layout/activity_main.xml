@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+            android:id="@+id/ipLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Server IP Address"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:layout_marginTop="200dp"
+            />
+    <EditText
+            android:id="@+id/ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_below="@id/ipLabel"
+            android:layout_marginHorizontal="40dp"/>
+    <TextView
+            android:id="@+id/nicknameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nickname"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:layout_below="@id/ip"
+    />
+    <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_below="@id/nicknameLabel"
+            android:layout_marginHorizontal="40dp"
+    />
+    <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:onClick="onLogin"
+            android:layout_below="@id/nickname"
+            android:layout_centerHorizontal="true"
+    />
+
+
+
+</RelativeLayout>
